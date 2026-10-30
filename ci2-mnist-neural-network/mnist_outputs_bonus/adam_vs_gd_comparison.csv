@@ -1,0 +1,3 @@
+name,hidden_layers,activation,learning_rate,batch_size,epochs,l2_lambda,dropout_keep_probs,optimizer,early_stopping,best_epoch,validation_loss,validation_accuracy
+mini_batch_gd_lr_0.1,"[128, 64]",relu,0.1,128,5,0.0,None,gd,False,5,0.26486262679100037,0.9225
+adam_lr_0.001,"[128, 64]",relu,0.001,128,5,0.0,None,adam,False,5,0.20450840890407562,0.9378333333333333

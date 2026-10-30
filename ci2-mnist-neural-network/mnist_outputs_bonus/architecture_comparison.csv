@@ -1,0 +1,4 @@
+name,hidden_layers,activation,learning_rate,batch_size,epochs,l2_lambda,dropout_keep_probs,optimizer,early_stopping,best_epoch,validation_loss,validation_accuracy
+1_hidden_64_relu,[64],relu,0.1,128,5,0.0,None,gd,False,5,0.3224443793296814,0.9068333333333334
+2_hidden_128_64_relu,"[128, 64]",relu,0.1,128,5,0.0,None,gd,False,5,0.26486262679100037,0.9225
+1_hidden_64_sigmoid,[64],sigmoid,0.1,128,5,0.0,None,gd,False,5,0.6106325387954712,0.8566666666666667

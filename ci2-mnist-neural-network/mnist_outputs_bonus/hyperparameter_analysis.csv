@@ -1,0 +1,13 @@
+name,hidden_layers,activation,learning_rate,batch_size,epochs,l2_lambda,dropout_keep_probs,optimizer,early_stopping,best_epoch,validation_loss,validation_accuracy
+lr=0.01,[64],relu,0.01,128,5,0.0,None,gd,False,5,0.6862200498580933,0.8403333333333334
+lr=0.05,[64],relu,0.05,128,5,0.0,None,gd,False,5,0.37576916813850403,0.8925
+lr=0.1,[64],relu,0.1,128,5,0.0,None,gd,False,5,0.3224443793296814,0.9068333333333334
+hidden=32,[32],relu,0.1,128,5,0.0,None,gd,False,5,0.31849339604377747,0.9088333333333334
+hidden=64,[64],relu,0.1,128,5,0.0,None,gd,False,5,0.3224443793296814,0.9068333333333334
+hidden=128,[128],relu,0.1,128,5,0.0,None,gd,False,5,0.308278888463974,0.9095
+batch=64,[64],relu,0.1,64,5,0.0,None,gd,False,5,0.2753179669380188,0.9186666666666666
+batch=128,[64],relu,0.1,128,5,0.0,None,gd,False,5,0.3224443793296814,0.9068333333333334
+batch=256,[64],relu,0.1,256,5,0.0,None,gd,False,5,0.3767242133617401,0.8926666666666667
+activation=relu,[64],relu,0.1,128,5,0.0,None,gd,False,5,0.3224443793296814,0.9068333333333334
+activation=sigmoid,[64],sigmoid,0.1,128,5,0.0,None,gd,False,5,0.6106325387954712,0.8566666666666667
+activation=tanh,[64],tanh,0.1,128,5,0.0,None,gd,False,5,0.3432227075099945,0.9021666666666667
