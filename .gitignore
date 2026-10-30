@@ -5,6 +5,11 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 
+# Large datasets that are not stored here (see the project READMEs)
+mnist_train.csv
+mnist_test.csv
+mnist.npz
+
 # Secrets / local config
 .env
 

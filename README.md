@@ -9,12 +9,14 @@ library models, and then evaluated and interpreted.
 | Folder | Topic | What is implemented | Key result |
 |---|---|---|---|
 | [`ci1-kmeans-customer-segmentation`](ci1-kmeans-customer-segmentation) | Unsupervised learning | K-Means, the silhouette score and standardization written from scratch; elbow and silhouette analysis; marketing segments of 200 mall customers | Five customer segments, silhouette 0.555 |
+| [`ci2-mnist-neural-network`](ci2-mnist-neural-network) | Neural networks | Fully connected network, backpropagation, ReLU/sigmoid/tanh, softmax + cross-entropy, mini-batch GD, Adam, dropout, early stopping and saved weights — all from scratch with NumPy | Test accuracy 97.89 % on MNIST |
 
 Each project folder has its own README with the task, the approach, the results and how to run it.
 
 ```
 BSc-Computational-Intelligence/
 ├── ci1-kmeans-customer-segmentation/
+├── ci2-mnist-neural-network/
 ├── requirements.txt
 └── README.md
 ```
