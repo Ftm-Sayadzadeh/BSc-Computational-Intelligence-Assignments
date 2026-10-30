@@ -1,0 +1,4 @@
+num_cities,best_distance,runtime_seconds,convergence_plot,route_plot,route_gif,route_csv
+20,428.1556824650843,6.170383930206299,ga_tsp_outputs\convergence_20_cities.png,ga_tsp_outputs\best_route_20_cities.png,ga_tsp_outputs\best_route_20_cities.gif,ga_tsp_outputs\best_route_20_cities.csv
+50,615.6426284311401,17.081748247146606,ga_tsp_outputs\convergence_50_cities.png,ga_tsp_outputs\best_route_50_cities.png,ga_tsp_outputs\best_route_50_cities.gif,ga_tsp_outputs\best_route_50_cities.csv
+100,843.5395706103636,44.82158875465393,ga_tsp_outputs\convergence_100_cities.png,ga_tsp_outputs\best_route_100_cities.png,ga_tsp_outputs\best_route_100_cities.gif,ga_tsp_outputs\best_route_100_cities.csv
