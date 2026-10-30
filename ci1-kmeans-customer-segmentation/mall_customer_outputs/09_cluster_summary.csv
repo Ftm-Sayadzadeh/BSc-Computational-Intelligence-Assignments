@@ -1,0 +1,6 @@
+Cluster,Count,Mean_Age,Mean_Income,Mean_Spending,Min_Income,Max_Income,Min_Spending,Max_Spending,Female_Count,Male_Count,Segment_Name
+0,39,32.69,86.54,82.13,69,137,63,97,21,18,"High income, high spending customers"
+1,23,45.22,26.3,20.91,15,39,3,40,14,9,"Low income, low spending customers"
+2,22,25.27,25.73,79.36,15,39,61,99,13,9,"Low income, high spending customers"
+3,35,41.11,88.2,17.11,70,137,1,39,16,19,"High income, low spending customers"
+4,81,42.72,55.3,49.52,39,76,34,61,48,33,"Medium income, average spending customers"

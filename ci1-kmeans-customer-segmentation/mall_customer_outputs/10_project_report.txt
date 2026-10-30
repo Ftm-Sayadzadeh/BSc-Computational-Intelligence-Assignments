@@ -1,0 +1,58 @@
+Customer Segmentation Report
+============================
+
+1. Project Goal
+The goal is to segment mall customers using unsupervised learning. K-Means was implemented from scratch without using any ready-made clustering algorithm.
+
+2. Dataset Overview
+Dataset shape: (200, 6)
+Initial analysis includes gender count, numeric feature distributions, and the income-spending scatter plot.
+
+3. Features Used for Final Clustering
+Final clustering uses only Annual Income (k$) and Spending Score (1-100).
+These two variables directly represent customer purchasing power and purchasing behavior, so they produce clear and interpretable marketing segments.
+Age and Gender are still used for exploratory analysis and cluster interpretation, but not for distance calculation in the final K-Means model.
+
+4. Preprocessing
+The selected clustering features were standardized before K-Means because Euclidean distance is sensitive to feature scale.
+
+5. K-Means Implementation
+The implementation includes random centroid initialization, Euclidean distance calculation, iterative assignment and centroid update, empty-cluster handling, and multiple initializations.
+Number of initializations for each K: 50
+
+6. K Evaluation
+ K    Inertia  Silhouette  Iterations  Runtime_Seconds
+ 2 269.016794    0.295121           4         0.021999
+ 3 157.704008    0.466585           8         0.041433
+ 4 108.921317    0.493907          12         0.041455
+ 5  65.568408    0.554657          10         0.045723
+ 6  55.057348    0.539880           9         0.057281
+ 7  44.864756    0.528149           7         0.059649
+ 8  37.151357    0.456441           5         0.078682
+ 9  32.383478    0.458601           5         0.085716
+10  29.086149    0.452432           7         0.089374
+
+Best K by Silhouette Score: 5 with score 0.554657
+Selected final K: 5
+K=5 was selected because it has the strongest silhouette score in the tested range and also matches five clear business segments in the income-spending space.
+
+7. Final Model
+Final inertia: 65.568408
+Final silhouette score: 0.554657
+Iterations until convergence: 10
+
+8. Cluster Summary
+         Count  Mean_Age  Mean_Income  Mean_Spending  Min_Income  Max_Income  Min_Spending  Max_Spending  Female_Count  Male_Count                               Segment_Name
+Cluster                                                                                                                                                                      
+0           39     32.69        86.54          82.13          69         137            63            97            21          18       High income, high spending customers
+1           23     45.22        26.30          20.91          15          39             3            40            14           9         Low income, low spending customers
+2           22     25.27        25.73          79.36          15          39            61            99            13           9        Low income, high spending customers
+3           35     41.11        88.20          17.11          70         137             1            39            16          19        High income, low spending customers
+4           81     42.72        55.30          49.52          39          76            34            61            48          33  Medium income, average spending customers
+
+9. Business Interpretation
+High income and high spending customers are valuable customers for loyalty programs and premium offers.
+High income and low spending customers have purchasing power but may need personalized offers or engagement campaigns.
+Low income and high spending customers may respond well to discounts and affordable bundles.
+Low income and low spending customers should be targeted with basic promotions and low-risk campaigns.
+Medium income and average spending customers represent stable regular customers.

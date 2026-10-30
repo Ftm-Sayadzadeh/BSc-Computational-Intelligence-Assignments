@@ -1,0 +1,84 @@
+{
+    "final_k": 5,
+    "best_k_by_silhouette": 5,
+    "best_silhouette": 0.554657,
+    "final_inertia": 65.56840815571681,
+    "final_silhouette": 0.554657163111109,
+    "iterations": 10,
+    "n_init": 50,
+    "features_used_for_clustering": [
+        "Annual Income (k$)",
+        "Spending Score (1-100)"
+    ],
+    "features_used_for_analysis": [
+        "Gender",
+        "Age",
+        "Annual Income (k$)",
+        "Spending Score (1-100)"
+    ],
+    "evaluation": [
+        {
+            "K": 2,
+            "Inertia": 269.016794,
+            "Silhouette": 0.295121,
+            "Iterations": 4,
+            "Runtime_Seconds": 0.021999
+        },
+        {
+            "K": 3,
+            "Inertia": 157.704008,
+            "Silhouette": 0.466585,
+            "Iterations": 8,
+            "Runtime_Seconds": 0.041433
+        },
+        {
+            "K": 4,
+            "Inertia": 108.921317,
+            "Silhouette": 0.493907,
+            "Iterations": 12,
+            "Runtime_Seconds": 0.041455
+        },
+        {
+            "K": 5,
+            "Inertia": 65.568408,
+            "Silhouette": 0.554657,
+            "Iterations": 10,
+            "Runtime_Seconds": 0.045723
+        },
+        {
+            "K": 6,
+            "Inertia": 55.057348,
+            "Silhouette": 0.53988,
+            "Iterations": 9,
+            "Runtime_Seconds": 0.057281
+        },
+        {
+            "K": 7,
+            "Inertia": 44.864756,
+            "Silhouette": 0.528149,
+            "Iterations": 7,
+            "Runtime_Seconds": 0.059649
+        },
+        {
+            "K": 8,
+            "Inertia": 37.151357,
+            "Silhouette": 0.456441,
+            "Iterations": 5,
+            "Runtime_Seconds": 0.078682
+        },
+        {
+            "K": 9,
+            "Inertia": 32.383478,
+            "Silhouette": 0.458601,
+            "Iterations": 5,
+            "Runtime_Seconds": 0.085716
+        },
+        {
+            "K": 10,
+            "Inertia": 29.086149,
+            "Silhouette": 0.452432,
+            "Iterations": 7,
+            "Runtime_Seconds": 0.089374
+        }
+    ]
+}
